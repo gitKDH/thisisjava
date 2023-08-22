@@ -1,10 +1,7 @@
-public class Television {
+public class Television implements RemoteControl{
 
-    static String company = "MyCompany";
-    static String model = "LCD";
-    static String info;
-
-    static{
-        info = company + "-" + model;
+    @Override
+    public void turnOn() {
+        System.out.println("전원을 킵니다.");
     }
 }
